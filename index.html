@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yiang Xu</title>
+<meta name="description" content="Yiang Xu — M.S. Data Science at NYU. Reinforcement learning for autonomous driving.">
+<meta name="author" content="Yiang Xu">
+<meta property="og:title" content="Yiang Xu">
+<meta property="og:description" content="Reinforcement learning for autonomous driving. NYU Data Science.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23163b52'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='42' fill='%23fbfaf7' text-anchor='middle'%3EYX%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script>
+  try {
+    var t = localStorage.getItem('theme');
+    if (t) document.documentElement.setAttribute('data-theme', t);
+    else if (window.matchMedia('(prefers-color-scheme: dark)').matches)
+      document.documentElement.setAttribute('data-theme', 'dark');
+  } catch (e) {}
+</script>
+</head>
+<body>
+
+<button class="theme" id="theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle color theme">
+  <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.6v2.4M12 19v2.4M2.6 12H5M19 12h2.4M5.4 5.4l1.7 1.7M16.9 16.9l1.7 1.7M18.6 5.4l-1.7 1.7M7.1 16.9l-1.7 1.7"/></svg>
+  <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 14.4A8.7 8.7 0 1 1 9.6 3.6a6.9 6.9 0 0 0 10.8 10.8z"/></svg>
+</button>
+
+<main>
+
+  <header class="intro">
+    <div class="intro-grid">
+      <div class="intro-text">
+        <h1>Yiang Xu</h1>
+
+        <p class="role">
+          M.S. student in Data Science, <a href="https://www.nyu.edu/" target="_blank" rel="noopener">New York University</a><br>
+          B.S. in Data Science &amp; Accountancy, <a href="https://illinois.edu/" target="_blank" rel="noopener">University of Illinois Urbana-Champaign</a>
+        </p>
+
+        <p class="lede">
+          I work on reinforcement learning for autonomous driving: how a learned
+          policy fails, and whether those failures can be turned into better training.
+          Currently a research assistant at the <a href="https://hubertyoo.github.io/" target="_blank" rel="noopener">Secure Reasoning Lab</a>.
+        </p>
+
+        <nav class="contact" aria-label="Contact">
+          <a href="mailto:yx3937@nyu.edu">Email</a>
+          <span aria-hidden="true">·</span>
+          <a href="https://www.linkedin.com/in/yiang-xu-xya" target="_blank" rel="noopener">LinkedIn</a>
+          <span aria-hidden="true">·</span>
+          <a href="assets/docs/Yiang_Xu_CV.pdf" target="_blank" rel="noopener">CV</a>
+        </nav>
+      </div>
+
+      <img class="portrait" src="assets/img/me.jpg" alt="Portrait of Yiang Xu" width="360" height="360">
+    </div>
+  </header>
+  <section id="publications">
+    <h2>Publications</h2>
+
+    <article class="entry">
+      <h3>
+        WZ-Plan: A Roadway Work-Zone Testbed for Autonomous Vehicle Motion
+        Planning via Reinforcement Learning
+      </h3>
+      <p class="meta">
+        <a href="https://shuo9898-zs.github.io/" target="_blank" rel="noopener">Shuo Zhang</a><sup>*</sup>, <strong>Yiang Xu</strong><sup>*</sup>, Ruide Yin
+        &nbsp;·&nbsp; IROS 2027, in preparation
+      </p>
+      <p class="actions">
+        <a href="https://shuo9898-zs.github.io/wz-plan/" target="_blank" rel="noopener">Project page</a>
+      </p>
+    </article>
+  </section>
+
+  <section id="research">
+    <h2>Research</h2>
+
+    <article class="entry">
+      <h3>Agent-Guided Policy Repair for Autonomous Driving</h3>
+      <p class="meta">
+        <a href="https://hubertyoo.github.io/" target="_blank" rel="noopener">Secure Reasoning Lab</a>, NYU
+        &nbsp;·&nbsp; with Prof. <a href="https://nyuad.nyu.edu/en/academics/divisions/engineering/faculty/jiahao-yu.html" target="_blank" rel="noopener">Jiahao Yu</a>
+        &nbsp;·&nbsp; 2026&ndash;present
+      </p>
+      <p class="blurb">
+        A language-model agent reads a failed simulated drive and proposes an
+        earlier action that would have changed the outcome; verified repairs are
+        then used as training signal for the driving policy.
+      </p>
+    </article>
+
+    <article class="entry">
+      <h3>Closed-Loop Motion Planning in Roadway Work Zones</h3>
+      <p class="meta">
+        <a href="https://bilab.engineering.nyu.edu/" target="_blank" rel="noopener">biLAB</a>, NYU Tandon
+        &nbsp;·&nbsp; with Prof. <a href="https://engineering.nyu.edu/faculty/semiha-ergan" target="_blank" rel="noopener">Semiha Ergan</a>
+        &nbsp;·&nbsp; 2026
+      </p>
+      <p class="blurb">
+        A configurable CARLA&ndash;SUMO testbed comprising a normal-traffic work zone
+        and five safety-critical scenario families, demonstrated with a jointly
+        trained PPO planner and structured scene encoder. Scenario-wise evaluation
+        characterizes planner capabilities, failure modes, and within-town transfer
+        limitations.
+      </p>
+    </article>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <ul class="rows">
+      <li>
+        <span class="when">2026&ndash;</span>
+        <span class="what">Research Assistant, <a href="https://hubertyoo.github.io/" target="_blank" rel="noopener">Secure Reasoning Lab</a>, NYU</span>
+      </li>
+      <li>
+        <span class="when">2026</span>
+        <span class="what">Research Assistant, <a href="https://bilab.engineering.nyu.edu/" target="_blank" rel="noopener">biLAB</a>, NYU Tandon</span>
+      </li>
+      <li>
+        <span class="when">2025</span>
+        <span class="what">Data Scientist Intern, <a href="https://www.chinatelecom-h.com/" target="_blank" rel="noopener">China Telecom</a></span>
+      </li>
+      <li>
+        <span class="when">2023</span>
+        <span class="what">Data Analyst Intern, <a href="https://www.merckgroup.com/" target="_blank" rel="noopener">Merck KGaA</a></span>
+      </li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+
+    <ul class="rows">
+      <li>
+        <span class="when">2025&ndash;27</span>
+        <span class="what">M.S. Data Science, New York University</span>
+      </li>
+      <li>
+        <span class="when">2021&ndash;25</span>
+        <span class="what">B.S. Data Science &amp; Accountancy, University of Illinois Urbana-Champaign</span>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Yiang Xu &nbsp;·&nbsp; <a href="mailto:yx3937@nyu.edu">yx3937@nyu.edu</a> &nbsp;·&nbsp; <span id="year">2026</span></p>
+  </footer>
+
+</main>
+
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>
